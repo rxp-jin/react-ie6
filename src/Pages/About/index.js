@@ -1,30 +1,24 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-// import Header from '../../Components/Header'
-// import Footer from '../../Components/Footer'
-
+import React from "react";
+import ReactDOM from "react-dom";
 class App extends React.Component {
   render() {
     return (
       <div>
-        {/* <Header /> */}
         <div className="container">{this.props.children}</div>
-        {/* <Footer /> */}
       </div>
-    )
+    );
   }
 }
 
 class Content extends React.Component {
   render() {
-    return <div>内容</div>
+    return <div>ABOUT</div>;
   }
 }
-
 
 ReactDOM.render(
   <App>
     <Content />
   </App>,
-  document.getElementById('app')
-)
+  document.getElementById("app")
+);
